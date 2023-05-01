@@ -1,7 +1,7 @@
 // Load assets
 Loader.addScenes([
 
-	//"scenes/PROMO.md",
+	// "scenes/PROMO.md",
 	"scenes/intro.md",
 	"scenes/act1.md",
 	"scenes/intermission.md",
@@ -33,8 +33,19 @@ subscribe("START_GAME", function(){
 	$("#loading").style.display = "none";
 	Game.start();
 
+    if(typeof Game.localizationDebug === 'function') {
+        Game.localizationDebug();
+    }
+
+    PM = window.localStorage.getItem('player_gender') == 'm';
+    $("#player_gender").innerHTML = PM ? "мужской" : "женский";
+
+    AM = window.localStorage.getItem('anxiety_gender') == 'm';
+    $("#anxiety_gender").innerHTML = AM ? "мужской" : "женский";
+
 	// Intro
-	Game.goto("intro");
+	Game.goto("intro")
+    //Game.goto("act1");
 
 	//Game.TEXT_SPEED = 5;
 
@@ -59,6 +70,7 @@ subscribe("SAVE_GAME", function(nextChapter){
 	var json = JSON.stringify(_);
 	window.localStorage.setItem("continueChapter", nextChapter); // to Continue
 	window.localStorage.setItem(nextChapter, json); // for chapter select
+
 });
 
 subscribe("LOAD_GAME", function(fromNextChapter){

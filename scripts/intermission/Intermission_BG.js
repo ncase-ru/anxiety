@@ -1,7 +1,8 @@
 Loader.addImages([
 	{ id:"intermission_bg", src:"sprites/intermission/bg.png" },
 	{ id:"intermission_bb", src:"sprites/intermission/bb.png" },
-	{ id:"youwin", src:"sprites/intermission/youwin.png" }
+	{ id:"youwin_male", src:"sprites/intermission/youwin_male.png" },
+	{ id:"youwin_female", src:"sprites/intermission/youwin_female.png" }
 ]);
 
 function BG_Intermission(STAGE){
@@ -17,7 +18,7 @@ function BG_Intermission(STAGE){
 		x:180, y:600
 	});
 	self.youwinSprite = new Sprite({
-		image: Library.images.youwin,
+		image: PM ? Library.images.youwin_male : Library.images.youwin_female,
 		grid:{ width:1, height:2 },
 		frame:{ width:720, height:600 }
 	});

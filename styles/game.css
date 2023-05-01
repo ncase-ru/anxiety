@@ -53,6 +53,32 @@ body.show_debug #game_container  * {
 
 /******************************************************************************************************
 
+Localization Debug
+
+******************************************************************************************************/
+
+.debug_overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.debug_confirm_box {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    text-align: center;
+    background: white;
+}
+
+/******************************************************************************************************
+
 MAIN GAME
 
 ******************************************************************************************************/
@@ -468,13 +494,13 @@ OPTIONS
 	background: #666;
 	top:-2px;
 }
-#text_automatic_toggle{
+#text_automatic_toggle, #player_gender, #anxiety_gender{
 	border: 1px solid #fff;
     border-radius: 5px;
     padding: 1px 5px;
     cursor: pointer;
 }
-#text_automatic_toggle:hover{
+#text_automatic_toggle:hover, #player_gender:hover, #anxiety_gender:hover{
 	background:rgba(255,255,255,0.3);
 }
 #click_to_advance{
@@ -503,7 +529,7 @@ input[type="range"]{
     height: 30px;
 }
 #text_speed_slider{
-	width: 150px;
+	width: 135px;
 }
 ::-webkit-slider-runnable-track{
     background: #ddd;
@@ -1048,7 +1074,7 @@ CORNER TEXT
 	overflow: hidden;
 	width:30px; height:30px;
 	background: url(../sprites/about/share.png);
-    background-size: 300%;
+    background-size: 600%;
     position: relative;
     cursor: pointer;
     opacity: 0.7;
@@ -1065,6 +1091,15 @@ CORNER TEXT
 }
 #share #share_em{
 	background-position: -60px;
+}
+#share #share_wa{
+	background-position: -90px;
+}
+#share #share_vk{
+	background-position: -120px;
+}
+#share #share_tg{
+	background-position: -150px;
 }
 @media screen and (max-width: 800px) {
 	.corner-text {

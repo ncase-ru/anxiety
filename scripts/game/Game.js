@@ -1,5 +1,7 @@
 window._ = {};
 window.Game = {};
+_ = {};
+Game = {};
 
 Game.sections = {};
 Game.queue = [];
@@ -77,12 +79,14 @@ Game.parseSceneMarkdown = function(md){
 		var lines = text.split("\n\n");
 		for(var i=0; i<lines.length; i++) lines[i]=lines[i].trim(); // trim it all!
 		
-		// New section
-		Game.sections[id] = {
-			id: id,
-			lines: lines
-		};
-
+		if (id in Game.sections) {
+		    Game.sections[id].lines = lines;
+		} else {
+            Game.sections[id] = {
+                id: id,
+                lines: lines
+            };
+        }
 	});
 
 };
@@ -94,6 +98,7 @@ Game.parseSceneMarkdown = function(md){
 Game.start = function(){
 	Game.FORCE_CANT_SKIP = false; // for the replay
 	window._ = {}; // global var, reset
+	_ = {};
 };
 
 var last_frame = Date.now();
@@ -371,6 +376,7 @@ Game.WHO_IS_SPEAKING = null; // "h", "b", "n" etc...
 Game.CURRENT_SPEAKING_SPEED = 1;
 Game.FORCE_NO_VOICE = false;
 Game.NO_NARRATOR_SOUNDS = false;
+Game.PLAYER_GENDER = 'f';
 Game.executeText = function(line){
 
 	return new RSVP.Promise(function(resolve){
@@ -646,7 +652,7 @@ Game.executeText = function(line){
 				var chr = word.slice(-1);
 				var isIcon = (word[0]=="#" && chr=="#");
 				if(chr=="*") chr = word[word.length-2]; // coz emphasis
-				if(chr=="," || chr==":") interval += SPEED*5;
+				if(chr=="," || chr==":" || chr=="–" || chr=="—") interval += SPEED*5;
 				if(chr=="." || chr=="?" || chr=="!") interval += SPEED*10;
 				if(word.slice(-3)=="...") interval += SPEED*15;
 

@@ -1,7 +1,8 @@
 Loader.addImages([
 		
 	{ id:"credits_bb_dance", src:"sprites/credits/bb_dance.png" },
-	{ id:"credits_end_message", src:"sprites/credits/end_message.png" },
+	{ id:"credits_end_message_male", src:"sprites/credits/end_message_male.png" },
+	{ id:"credits_end_message_female", src:"sprites/credits/end_message_female.png" },
 	{ id:"credits_end_walk", src:"sprites/credits/end_walk.png" },
 	{ id:"credits_gramm", src:"sprites/credits/gramm.png" },
 	{ id:"credits_screens", src:"sprites/credits/screens.png" },
@@ -45,7 +46,7 @@ function BG_Credits(){
 	self.thanks = new Sprite({
 		image: Library.images.credits_thanks,
 		grid:{ width:1, height:1 },
-		frame:{ width:720, height:7200 },
+		frame:{ width:720, height:8120 },
 		anchor:{ x:0, y:0 },
 		x:0, y:0
 	});
@@ -62,9 +63,16 @@ function BG_Credits(){
 	self.bb_dance = new Sprite(BBDance);
 
 	// END MESSAGE
-	var endMsg = {
-		image: Library.images.credits_end_message,
-		grid:{ width:4, height:1 },
+	var endMsgMale = {
+		image: Library.images.credits_end_message_male,
+		grid:{ width:5, height:1 },
+		frame:{ width:720, height:1200 },
+		anchor:{ x:0, y:0 },
+		x:0, y:17
+	};
+	var endMsgFemale = {
+		image: Library.images.credits_end_message_female,
+		grid:{ width:5, height:1 },
 		frame:{ width:720, height:1200 },
 		anchor:{ x:0, y:0 },
 		x:0, y:17
@@ -73,8 +81,9 @@ function BG_Credits(){
 	[{from:49.9667,to:50.6},
 	 {from:51.4667,to:52.1},
 	 {from:53.8333,to:54.4667},
-	 {from:57.8333,to:58.4667}].forEach(function(period, i){
-		var msg = new Sprite(endMsg);
+	 {from:56.8333,to:57.4667},
+	 {from:59.4667,to:59.9667}].forEach(function(period, i){
+		var msg = new Sprite(PM ? endMsgMale : endMsgFemale);
 		msg.gotoFrame(i);
 		msg._PERIOD = period;
 		self.endMessages.push(msg);
@@ -125,7 +134,7 @@ function BG_Credits(){
 	var S2_SCROLL_START = 34.1667;// + 0.75;
 	var S2_SCROLL_END = 49.6667;
 	var S2_SCROLL_DUR = S2_SCROLL_END-S2_SCROLL_START;
-	var S2_SCROLL_LEN = 3600 + 600;
+	var S2_SCROLL_LEN = 4050 + 600;
 
 	// STAGE 4
 	var YELPED = false;

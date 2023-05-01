@@ -26,11 +26,32 @@ Loader.addSounds([
 			HOW_MANY_PROMPTS = 1;
 		}
 		Game.CLICK_TO_ADVANCE = !Game.CLICK_TO_ADVANCE;
-		text_automatic_toggle.innerHTML = Game.CLICK_TO_ADVANCE ? "on click" : "automatically";
+		text_automatic_toggle.innerHTML = Game.CLICK_TO_ADVANCE ? "по клику" : "авто";
+		window.localStorage.setItem('CLICK_TO_ADVANCE', Game.CLICK_TO_ADVANCE);
 
 		// Sound
 		sfx( Game.CLICK_TO_ADVANCE ? "ui_button2" : "ui_button1");
 
+	};
+
+	var player_gender = $("#player_gender");
+	player_gender.onclick = function(){
+	    PM = PM ? false : true;
+		player_gender.innerHTML = PM ? "мужской" : "женский";
+		window.localStorage.setItem('player_gender', PM ? 'm' : 'f');
+
+		// Sound
+		sfx( PM ? "ui_button2" : "ui_button1");
+	};
+
+	var anxiety_gender = $("#anxiety_gender");
+	anxiety_gender.onclick = function(){
+	    AM = AM ? false : true;
+		anxiety_gender.innerHTML = AM ? "мужской" : "женский";
+		window.localStorage.setItem('anxiety_gender', AM ? 'm' : 'f');
+
+		// Sound
+		sfx( AM ? "ui_button2" : "ui_button1");
 	};
 
 	// Add sounds to slider
@@ -145,7 +166,7 @@ Loader.addSounds([
 		div.innerHTML = "";
 
 		// What's the dialogue?
-		var dialogue = Game.TEXT_SPEED<80 ? "Speak this fast" : "Speak this slow";
+		var dialogue = Game.TEXT_SPEED<51 ? "Быстрее" : "Медленнее";
 
 		// Put in the text
 		var span, chr;
@@ -187,8 +208,9 @@ Loader.addSounds([
 
 		ALREADY_DID_INTRO = false;
 		optionsDOM.setAttribute("past_intro", ALREADY_DID_INTRO ? "yes" : "no");
-		
-		optionsDOM.style.top = "447px";
+
+		optionsDOM.style.top = "400px";
+
 		_clearAllTimeouts();
 		text_speed_preview.innerHTML = "";
 

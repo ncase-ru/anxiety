@@ -6,7 +6,7 @@ Game.WORDS_HEIGHT_BOTTOM = 205;
 sfx("cheers");
 ```
 
-r: Cheers!
+r: Твоё здоровье!
 
 ```
 publish("act3",["roofhunter",1]);
@@ -23,41 +23,41 @@ publish("act3",["roofhunter",3]);
 publish("act3",["roofhong",3]);
 ```
 
-h2: *Ah* that hits the spot.
+h2: Это *бьёт* по мозгам!
 
 ```
 publish("act3",["roofhunter",2]);
 publish("act3",["roofhong",2]);
 ```
 
-r: You know, kid...
+r: Знаешь, {{PM ? 'чувак' : 'няш'}}...
 
 ```
 publish("act3",["roofhunter",3]);
 publish("act3",["roofhong",6]);
 ```
 
-h2: Specifically, the spots hit are my left and right amygdala.
+h2: А именно, по правому и левому миндалевидным телам.
 
 ```
 publish("act3",["roofhunter",8]);
 publish("act3",["roofhong",5]);
 ```
 
-r: You remind me of myself when I was younger. Back when I was tormented by the animal in my head.
+r: Ты напоминаешь мне меня в прошлом. Меня тогда тоже мучило животное в моей голове.
 
 ```
 publish("act3",["roofhunter",9]);
 publish("act3",["roofhong",2]);
 ```
 
-r: I'm so grateful I can pay it forward, and help you kill the beast the way I killed mine.
+r: Я {{PM ? 'рада' : 'рад'}}, что прямо сейчас могу отплатить ему! А заодно и помочь тебе убить своего зверя, как {{PM ? 'убила' : 'убил'}} его я.
 
 ```
 publish("act3",["roofhunter",2]);
 ```
 
-r: Hey, quick question: truth or da--
+r: Не думай! Правда или действ--
 
 ```
 publish("act3",["roofhunter",3]);
@@ -65,7 +65,7 @@ publish("act3",["roofhong",7]);
 publish("act3-alpha", ["dizzyhong",0]);
 ```
 
-h2: DARE!
+h2: ДЕЙСТВИЕ!
 
 ```
 publish("act3-alpha", ["dizzyhong",1]);
@@ -73,14 +73,14 @@ publish("act3",["roofhunter",10]);
 publish("act3",["roofhong",2]);
 ```
 
-r: Haha! Good.
+r: Хаха! Отлично!
 
 ```
 publish("act3",["roofhunter",21]);
 publish("act3",["roofhong",4]);
 ```
 
-r: Ok. You see that baby-blue swimming pool down there?
+r: Видишь тот голубенький бассейн внизу?
 
 ```
 publish("act3-alpha", ["dizzyhong",0]);
@@ -88,14 +88,14 @@ publish("act3",["roofhunter",11]);
 publish("act3",["roofhong",9]);
 ```
 
-h2: Yeah? Six floors down?
+h2: Этот? Шестью этажами ниже?
 
 ```
 publish("act3",["roofhunter",10]);
 publish("act3",["roofhong",8]);
 ```
 
-r: Jump in.
+r: Прыгни в него!
 
 ```
 publish("act3",["roofhunter",11]);
@@ -108,39 +108,41 @@ h2: ...
 publish("act3",["roofhong",11]);
 ```
 
-h2: Wait, what?
+h2: Чего!?
 
 ```
 publish("act3",["roofhong",10]);
 publish("act3",["roofhunter",2]);
 ```
 
-r: The animal's started whining, hasn't it?
+r: Зверь начал скулить?
 
 ```
 publish("act3",["roofhunter",23]);
 ```
 
-r: *Oh nooooo it's dangerous, don't do iiiiit.*
+r: *О неееет, это опасно, не дееееелай этого...*
 
 ```
 publish("act3",["roofhunter",22]);
 ```
 
-r: But that's exactly why we need death-defying thrills! Party hard! Carpe diem! Snort coke off a hooker's ^ass^, #YOLO!
+r: Именно поэтому нам нужна *смертельная* опасность!
+
+r: Оторвись по полной! Carpe diem! Нюхни порошка {{PM ? 'с жопы шлюхи' : 'с члена'}}! Живёшь лишь раз!
 
 ```
 publish("act3",["roofhunter",10]);
 ```
 
-r: Show that animal we don't give two *^dick^s* about its ^bitch^ing! Jump in.
+r: Покажи зверю, что нам абсолютно *^похуй^* на его скулёж! Прыгай!
 
 ```
 publish("act3",["roofhunter",11]);
 publish("act3",["roofhong",13]);
 ```
 
-h2: Uh, but sometimes, um... fear has a point...
+h2: Эм, но иногда, эмм... страх полезен...
 
 ```
 publish("act3",["roofhunter",5]);
@@ -156,43 +158,43 @@ publish("act3",["roofhunter",6]);
 publish("act3",["dd",1]);
 ```
 
-r: I'm sorry, did you fall for that McMindfulness propaganda that claims feeling bad is *good?*
+r: {{PM ? 'Чувак, ты' : 'Ты'}} реально ведёшься на эту пропаганду{{PM ? '' : ', пупсик'}}!? Что чувствовать себя плохо – это *хорошо?*
 
 ```
 publish("act3",["roofhunter",17]);
 ```
 
-r: The ^assholes^ who run this world give the rest of *us* anxiety and depression,
+r: ^Гандоны^, которые управляют этим миром, вгоняют в депрессию и тревогу всех *остальных*,
 
 ```
 publish("act3",["roofhunter",18]);
 ```
 
-r: Then make TED Talks to tell us to "accept" being ^fucked^ over, and "embrace" that sadistic demon in our heads!
+r: а потом говорят на TED Talks, чтобы мы "приняли" состояние полнейшей ^наёбанности^ и "обняли" демона-садиста в наших головах!
 
 ```
 publish("act3",["roofhunter",6]);
 ```
 
-r: Kid, I know that *you* know that animal *hurts* people like us. It *tortures* people like us.
+r: {{PM ? 'Чувак' : 'Няш'}}, я знаю, что *ты* знаешь, что животное *травмирует* таких, как мы. Оно издевается над *всеми* нами.
 
 ```
 publish("act3",["roofhunter",19]);
 ```
 
-r: It's not our friend. It's a rabid beast, which either needs to be *tranquilized*,
+r: Оно нам не друг. Оно – взбесившийся зверь, которого нужно либо *усыпить*,
 
 ```
 publish("act3",["roofhunter",20]);
 ```
 
-r: Or have a *bullet put in its skull*.
+r: либо *пристрелить*.
 
 ```
 publish("act3",["roofhunter",27]);
 ```
 
-r: Otherwise, you're going to let it win.
+r: Иначе ты позволишь ему победить!
 
 ```
 publish("act3",["roofhunter",31]);
@@ -200,17 +202,17 @@ publish("act3",["roofhong",14]);
 publish("act3",["dd",2]);
 ```
 
-h2: No. You're wrong.
+h2: Ты ошибаешься.
 
 ```
 publish("act3",["roofhunter",13]);
 publish("act3",["roofhong",15]);
 music('battle_dark', {volume:1.0}, function(){
-	music('battle_dark_loop');
+    music('battle_dark_loop');
 });
 ```
 
-h2: I'm not going to let it win.
+h2: Я не позволю {{AM ? 'ему' : 'ей'}} победить!
 
 ```
 publish("act3",["roofhunter",25]);
@@ -219,7 +221,7 @@ publish("act3-alpha", ["transition",1]);
 publish("act3",["dd",6]);
 ```
 
-r: ^Fuck^ yeah! I believe in you, babe! Kill it! <3
+r: Дааааа{{PM ? ', ^ахуенно^! Я в тебя верю, чувак' : '! Я верю в тебя'}}! Убей {{AM ? 'его' : 'её'}}!
 
 (#act3a)
 
@@ -240,38 +242,38 @@ _.act3_bb_body = 1;
 publish("hp_show");
 ```
 
-b: no no no no no no
+b: нет нет нет нет нет нет
 
-n: THIS CHAPTER HAS TWO POSSIBLE ENDINGS. ONE IS *VERY, VERY BAD.*
+n: У ЭТОЙ ГЛАВЫ ДВЕ КОНЦОВКИ. ОДНА ИЗ НИХ *ОЧЕНЬ, ОЧЕНЬ ПЛОХАЯ*.
 
-b: NO NO NO NO NO NO NO NO NO NO NO NO NO NO
+b: НЕТ НЕТ НЕТ НЕТ НЕТ НЕТ НЕТ НЕТ
 
-n: CHOOSE WISELY. PROTECT YOUR HUMAN
+n: ВЫБИРАЙ МУДРО. ЗАЩИТИ СВОЕГО ЧЕЛОВЕКА.
 
 `bb({ eyes:"oh_crap", mouth:"normal_talk", MOUTH_LOCK:true });`
 
-b: AAAAAAAAAAAAAAAAAA
+b: ААААААААААААААААААААА
 
 `bb({ mouth:"normal" });`
 
-n: GOOD LUCK
+n: УДАЧИ
 
 ```
 Game.clearText();
 bb({ eyes:"start" });
 ```
 
-[Human, you could actually DIE here!](#act3a_harm) `Game.OVERRIDE_CHOICE_LINE=true`
+[Человек, ты РЕАЛЬНО можешь УМЕРЕТЬ!](#act3a_harm) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[This is stupid and self-destructive!](#act3a_bad) `Game.OVERRIDE_CHOICE_LINE=true`
+[Это глупо и опасно!](#act3a_bad) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[These sickos aren't really your friends!](#act3a_alone) `Game.OVERRIDE_CHOICE_LINE=true`
+[{{PM ? 'Эта дура тебе не подруга!' : 'Этот придурок тебе не друг!'}}](#act3a_alone) `Game.OVERRIDE_CHOICE_LINE=true`
 
 # act3a_harm
 
 `bb({ MOUTH_LOCK:true, mouth:"normal_talk" });`
 
-b: H--
+b: Ч--
 
 (#act3a_after)
 
@@ -279,7 +281,7 @@ b: H--
 
 `bb({ MOUTH_LOCK:true, mouth:"normal_talk" });`
 
-b: T--
+b: Э--
 
 (#act3a_after)
 
@@ -287,7 +289,7 @@ b: T--
 
 `bb({ MOUTH_LOCK:true, mouth:"normal_talk" });`
 
-b: T--
+b: Э--
 
 (#act3a_after)
 
@@ -307,9 +309,9 @@ hong({ body:"normal" });
 bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 ```
 
-h: You know, I might've believed you... if you hadn't tried that a zillion times before.
+h: Знаешь, я бы может быть и {{PM ? 'поверил' : 'поверила'}}... если бы ты не {{AM ? 'говорил' : 'говорила'}} об этом миллион раз.
 
-h: You're the wolf who cried wolf.
+h: Ты {{AM ? 'волк, который кричал:' : 'волчица, которая кричала:'}} "Волки!"
 
 ```
 bb({ eyes:"sad" });
@@ -354,43 +356,43 @@ hong({ body:"normal" });
 bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 ```
 
-h: You tried that too.
+h: Ты и это уже {{AM ? 'пробовал' : 'пробовала'}}.
 
-b: human, please...
+b: человек, пожалуйста...
 
 `hong({ eyes:"look_right" });`
 
-h: Oh I'm *sorry* Big Pharma doesn't approve of my self-medication.
+h: Ой, *простите*, доктор против моего самолечения?!
 
-h: Look ^asshole^, we *all* have a way of shutting you the ^fuck^ up.
+h: Слыш, ^сука^, у нас у *всех* есть способы заткнуть тебя ^нахуй^.
 
 `hong({ body:"look_up", eyes:"look_up" });`
 
-h: Some people throw themselves into work.
+h: Кто-то с головой уходит в работу.
 
 `hong({ body:"look_down", eyes:"look_down" });`
 
-h: Some people throw themselves into sex, drugs, and refreshing their Facebook feed.
+h: Кто-то забывается сексом, наркотиками и обновлением новостных лент.
 
 `hong({ body:"normal", eyes:"look_right" });`
 
-h: Some people throw themselves into other people. 
+h: Кто-то растворяет себя в других людях.
 
 `hong({ eyes:"angry" });`
 
-h: I'm going to throw myself into that swimming pool.
+h: А я собираюсь раствориться в этом бассейне.
 
-[You're drunk and it's SIX FLOORS DOWN](#act3_bad_1_harm)
+[Ты {{PM ? 'пьян' : 'пьяна'}}, а он ШЕСТЬЮ ЭТАЖАМИ НИЖЕ!](#act3_bad_1_harm)
 
-[Dang it, this is the thanks I get?!](#act3_bad_1_insult) `bb({eyes:"angry"});`
+[И это твоя благодарность?](#act3_bad_1_insult) `bb({eyes:"angry"});`
 
-[Okay, I admit it. I messed up.](#act3_good_1) `bb({mouth:"sorry", eyes:"sorry_down"});`
+[Я {{AM ? 'накосячил! Я был не прав' : 'накосячила! Я была не права'}}!](#act3_good_1) `bb({mouth:"sorry", eyes:"sorry_down"});`
 
 # act3_bad_1_harm
 
-b: Even if you land in the water, the surface tension will crack your ribs and give you a concussion *at the least!*
+b: Даже если ты приземлишься в воду, ты *как минимум* сломаешь себе рёбра и получишь сотрясение из-за поверхностного натяжения воды!
 
-h: Eh.
+h: Эх.
 
 ```
 hong({body:"drink"});
@@ -406,7 +408,7 @@ hong({ body:"normal", mouth:"angry", eyes:"angry" });
 bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 ```
 
-h: I saw a Russian guy do this on YouTube once.
+h: Я {{PM ? 'видел' : 'видела'}}, как прыгают в воду
 
 (#act3_bad_2)
 
@@ -414,13 +416,13 @@ h: I saw a Russian guy do this on YouTube once.
 
 `hong({ eyes:"look_right" });`
 
-h: I- Excuse me, the *thanks?*
+h: Я что, *благодарить* тебя {{PM ? 'должен' : 'должна'}}?!
 
 `bb({ eyes:"angry" });`
 
-b: This is exactly why I *exist!* Because humans can't be trusted to protect themselves!
+b: Я *существую*, чтобы тебя защищать! Потому что людям этого доверить нельзя!
 
-b: I've been trying to protect your stupid butt all my life and now you're just going t--
+b: Я защищаю твою тупую задницу всю свою жизнь! А сейчас ты просто хоч--
 
 ```
 hong({body:"drink"});
@@ -442,41 +444,41 @@ bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 
 `hong({ body:"laugh_1" })``
 
-h: heh.
+h: ха.
 
 `hong({ body:"laugh_2" })``
 
-h: hahahaha
+h: Хахаха!
 
 `hong({ body:"laugh_3" })``
 
-h: HAHAHAHAHAHA
+h: АХАХАХАХА!!!
 
 ```
 bb({ eyes:"sorry"});
 hong({ body:"yell_1", mouth:"yell", eyes:"blank" });
 ```
 
-h: Oh WOW is that the biggest *^fuck^ing* understatement of the century!
+h: Да это же, *^блять^*, величайшее преуменьшение века!
 
 `hong({ body:"yell_2" });`
 
-h: Yeah, you rotting pile of blood-coated ^shit^! You messed the ^fuck^ up!
+h: Это был твой огромный *^проёб^*, ты, вонючая куча кроваво-красного ^дерьма^! 
 
 `hong({ body:"normal", mouth:"angry", eyes:"angry" });`
 
-h: Any other remarks, Captain Obvious?
+h: Что-нибудь ещё, Капитан Очевидность?
 
-[But revenge on me isn't the answer!](#act3_good_1_fail_revenge) `bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });`
+[Но месть мне – это не решение!](#act3_good_1_fail_revenge) `bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });`
 
-[But this time I'm *actually* right!](#act3_good_1_fail_harm) `bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });`
+[Но *сейчас* я {{AM ? 'прав' : 'права'}}!](#act3_good_1_fail_harm) `bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });`
 
-[I've hurt you.](#act3_good_2a)
+[Я {{AM ? 'ранил' : 'ранила'}} тебя.](#act3_good_2a)
 
 
 # act3_good_1_fail_revenge
 
-b: You need to have a healthier relationship with your emotions, rather than drown them wi--
+b: Тебе необходимо научиться строить здоровые отношения со своими эмоциями, а не топить их в--
 
 ```
 hong({body:"drink"});
@@ -498,7 +500,7 @@ bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 
 # act3_good_1_fail_harm
 
-b: So please, put the bottle down and let's--
+b: Поэтому, пожалуйста, поставь бутылку и давай--
 
 ```
 hong({body:"drink"});
@@ -523,24 +525,24 @@ bb({ body:"normal_"+_.act3_bb_body, mouth:"normal", eyes:"normal" });
 
 `bb({ eyes:"sad" });`
 
-b: please... don't...
+b: пожалуйста... не надо
 
-h: Your energy bar's looking awfully low there, wolf.
+h: Твоя шкала энергии практически на нуле, {{AM ? 'волк' : 'волчица'}}.
 
-h: If I were you, I'd choose your next words very carefully.
+h: На твоём месте, я бы очень аккуратно {{PM ? 'подбирал' : 'подбирала'}} слова.
 
 `bb({ eyes:"normal" });`
 
-[Fine. I'm done protecting you.](#act3_bad_2_jump) `bb({ mouth:"ignore", eyes:"ignore" });`
+[Ладно! Я больше не буду тебя защищать!](#act3_bad_2_jump) `bb({ mouth:"ignore", eyes:"ignore" });`
 
-[I was right all along.](#act3_bad_2_right)
+[Я вижу больше, чем ты!](#act3_bad_2_right)
 
-[I'm sorry.](#act3_good_2b) `bb({mouth:"sorry", eyes:"sorry_down"});`
+[Прости...](#act3_good_2b) `bb({mouth:"sorry", eyes:"sorry_down"});`
 
 
 # act3_bad_2_jump
 
-b: So, go ahead and jump. See what I care.
+b: Вперёд, прыгай! Мне всё равно!
 
 `hong({ eyes:"look_right", mouth:"normal", MOUTH_LOCK:true });`
 
@@ -551,14 +553,14 @@ hong({ eyes:"less_angry", mouth:"normal" });
 bb({ eyes:"ignore_oh_crap" });
 ```
 
-h: Okay then. Bottoms up.
+h: Отлично! Тогда до дна!
 
 ```
 bb({ mouth:"normal", eyes:"oh_crap" });
 Game.OVERRIDE_TEXT_SPEED = 2;
 ```
 
-b: WAIT NO THAT WAS REVERSE PSYCHOLOGY YOU WERE SUPPOSED TO DO THE *OPPOSITE* OF WHAT I SA--
+b: НЕТ! ПОДОЖДИ! ЭТО РЕВЕРСИВНАЯ ПСИХОЛОГИЯ! ТЫ {{PM ? 'ДОЛЖЕН' : 'ДОЛЖНА'}} ПОСТУПИТЬ *НАОБОРОТ*, А НЕ ТАК КАК Я СКАЗ--
 
 (#act3_bad_3)
 
@@ -568,13 +570,13 @@ b: WAIT NO THAT WAS REVERSE PSYCHOLOGY YOU WERE SUPPOSED TO DO THE *OPPOSITE* OF
 
 `bb({ eyes:"angry" });`
 
-b: You *are* putting yourself in danger. Your so-called friends *are* using you. And *you* are using your so-called friends.
+b: *Ты* {{PM ? 'вогнал' : 'загнала'}} себя в опасность. Твои "друзья" *манипулируют* тобой! Ты используешь их! Увидь это, человек!
 
 `bb({ eyes:"sad" });`
 
-b: So please, human... why don't you believe me?!
+b: Почему ты не веришь мне?!
 
-h: Because you never believed in *me*.
+h: Потому что ты не {{AM ? 'верил' : 'верила'}} *в меня*!
 
 (#act3_bad_3)
 
@@ -583,13 +585,13 @@ h: Because you never believed in *me*.
 
 `bb({ eyes:"angry" });`
 
-b: Other guard-wolves have humans who actually take time to patiently train them, to *learn* to work together,
+b: Другие люди терпеливо тренируют своих сторожевых волков. Они *учатся* работать как команда,
 
-b: Rather than hate the guard-wolves for trying to protect them! So why can't you jus--
+b: а не отвечают ненавистью на попытки защитить! Почему бы тебе прост--
 
 `bb({ eyes:"normal" });`
 
-h: Wrong ^fuck^ing answer.
+h: Неправильный, б^лят^ь, ответ!
 
 (#act3_bad_3)
 
@@ -614,29 +616,29 @@ bb({ body:"dead" });
 
 (...999)
 
-h: *"The only thing to fear is fear itself."*
+h: *"Единственное, чего стоит бояться – это самого страха"*
 
 `hong({ body:"look_up", mouth:"happy", eyes:"blank" });`
 
-h: *"Don't worry, be happy!"*
+h: *"Не парься, будь счастлив"*
 
 `hong({ body:"normal", mouth:"normal", eyes:"normal" });`
 
-h: All the wise folk of our time agree: negative emotions are *bad!*
+h: "Негативные эмоции *вредны*"
 
 `hong({ eyes:"less_angry" });`
 
-h: Duh! That's why they're called *negative!*
+h: и именно поэтому их называют *негативными!*
 
-b: human... please...
+b: человек... пожалуйста...
 
 `hong({ eyes:"normal" });`
 
-h: A while back, I said: “I just want to be free from all this pain.”
+h: Я говорил, что я просто хочу не чувствовать всю эту... боль
 
-h: I got my wish. I no longer feel pain, or fear, or anxiety...
+h: И моё желание сбылось! Я больше не чувствую ни боли, ни страха, ни тревожности...
 
-h: I don't feel anything at all.
+h: Я больше вообще *НИЧЕГО* не чувствую!
 
 `_.a3_ending = "jump";`
 
@@ -648,22 +650,22 @@ h: I don't feel anything at all.
 
 `bb({mouth:"sorry", eyes:"sorry_down"});`
 
-b: I was so obsessed with making sure nothing else hurt you, that I didn't realize *I* was creating the hurt.
+b: Я так {{AM ? 'желал' : 'желала'}} защитить тебя от боли, что не {{AM ? 'видел' : 'видела'}} ничего другого. Я не {{AM ? 'остановился и не осознал' : 'остановилась и не осознала'}}, что это *я* причиняю тебе боль.
 
 ```
 bb({ eyes:"sorry"});
 hong({ body:"yell_2", mouth:"yell", eyes:"blank" });
 ```
 
-h: NO. S^HIT^.
+h: А^ХУЕ^ТЬ!
 
 `hong({ body:"yell_1" });`
 
-h: ^GODDAMN^. It really took you this long to finally figure it out?!
+h: Сколько же тебе понадобилось времени, чтобы наконец-то понять это!
 
 `hong({ body:"cry", mouth:"cry", eyes:"blank" });`
 
-h: You could've saved us so much trouble, you big fluffy dumb^ass^. Why didn't you realize this sooner?...
+h: Ты {{AM ? 'мог' : 'могла'}} бы избавить меня от стольких неприятностей! Ты – {{AM ? 'большой пушистый долбоволк' : 'большая пушистая дурында'}}. Почему ты не {{AM ? 'понял' : 'поняла'}} этого раньше?...
 
 `_.apologized_for_hurt = true;`
 
@@ -675,13 +677,13 @@ h: You could've saved us so much trouble, you big fluffy dumb^ass^. Why didn't y
 
 `hong({ body:"normal", mouth:"angry", eyes:"look_right" });`
 
-h: ...you're *sorry.*
+h: ...ты просишь *прощения*
 
 `hong({ eyes:"angry", MOUTH_LOCK:true });`
 
 h: ...
 
-h: Sorry for *what*?
+h: Прощения *за что?*
 
 (#act3_good_2q)
 
@@ -703,22 +705,22 @@ h: Sorry for *what*?
 
 `hong({ body:"normal", mouth:"angry", eyes:"less_angry" });`
 
-[I'm sorry I wasn't a good protector.](#act3_good_3_protector)
+[Прости, что я {{AM ? 'впал' : 'впала'}} в крайность.](#act3_good_3_protector)
 
-[I'm sorry I didn't respect you.](#act3_good_3_respect)
+[Прости, что я не {{AM ? 'уважал' : 'уважала'}} тебя.](#act3_good_3_respect)
 
-[I'm sorry.](#act3_good_4)
+[Прости. Мне жаль.](#act3_good_4)
 
 
 # act3_good_2q_not_already_apologized
 
 `hong({ body:"normal", mouth:"angry", eyes:"angry" }, 0);`
 
-[I'm sorry I have a terrible human!](#act3_bad_2_terrible) `bb({mouth:"normal", eyes:"normal"})`
+[Прости, что мне достался такой ужасный человек!](#act3_bad_2_terrible) `bb({mouth:"normal", eyes:"normal"})`
 
-[I'm sorry I didn't respect you.](#act3_good_3_respect)
+[Прости, что я не {{AM ? 'уважал' : 'уважала'}} тебя.](#act3_good_3_respect)
 
-[I'm sorry I hurt you.](#act3_good_3_hurt)
+[Прости, что {{AM ? 'ранил' : 'ранила'}} тебя.](#act3_good_3_hurt)
 
 
 
@@ -726,19 +728,19 @@ h: Sorry for *what*?
 
 `bb({eyes:"sorry_down"});`
 
-b: It's my duty to warn you against *real* danger, but I kept barking at cars and the mailman.
+b: Моя обязанность – предупреждать тебя о *реальной* опасности. А я {{AM ? 'лаял' : 'лаяла'}} на проезжающие машины, велосипеды и птиц.
 
 `bb({eyes:"sorry_up"});`
 
-b: Barking at shadows. Barking so much.
+b: Я {{AM ? 'лаял' : 'лаяла'}} на тени слишком часто.
 
 `bb({eyes:"sorry"});`
 
-b: It only makes sense that you'd want to muzzle me.
+b: Вполне логично, что ты хочешь надеть на меня намордник.
 
 `bb({eyes:"sorry_down"});`
 
-b: I'm sorry.
+b: Прости.
 
 (#act3_good_4)
 
@@ -748,15 +750,15 @@ b: I'm sorry.
 
 `bb({eyes:"sorry_down"});`
 
-b: I was supposed to be *your* loyal guard-dog, but I acted as if you were supposed to obey *me*.
+b: Мне следовало быть {{AM ? '*твоим* преданным сторожевым псом. Но я вёл' : '*твоей* преданной сторожевой волчицой. Но я вела'}} себя так, как будто это *ты* {{PM ? 'должен' : 'должна'}} подчиняться мне.
 
 `bb({eyes:"sorry_up"});`
 
-b: There's a difference between a protector and a prison warden, and I crossed the line.
+b: Я не {{AM ? 'заметил' : 'заметила'}} разницы между {{AM ? 'защитником  и тюремным надсмотрщиком' : 'защитницей и тюремной надсмотрщицой'}}. Я {{AM ? 'выбрал' : 'выбрала'}} не ту роль.
 
 `bb({eyes:"sorry_down"});`
 
-b: I'm sorry.
+b: Прости.
 
 (#act3_good_4)
 
@@ -766,15 +768,15 @@ b: I'm sorry.
 
 `bb({eyes:"sorry_down"});`
 
-b: I was so obsessed with trying to protect you from being hurt, I never stopped to realize *I* was hurting you.
+b: Я так {{AM ? 'желал' : 'желала'}} защитить тебя от боли, что не {{AM ? 'видел ничего другого. Я не остановился и не осознал' : 'видела ничего другого. Я не остановилась и не осознала'}}, что это *я* причиняю тебе боль.
 
 `bb({eyes:"sorry_up"});`
 
-b: I was a bad dog.
+b: Я {{AM ? 'вёл себя как плохой пёс' : 'вела себя как плохая волчица'}}.
 
 `bb({eyes:"sorry_down"});`
 
-b: I'm sorry.
+b: Прости.
 
 (#act3_good_4)
 
@@ -792,11 +794,11 @@ h: ...
 hong({ body:"stop", mouth:"stop", eyes:"blank" });
 ```
 
-h: Yeah, well, this was a dumb idea anyway.
+h: Это, конечно, была глупая идея.
 
-h: I only did this to mess you up, and, well, I messed you up.
+h: Я {{PM ? 'делал' : 'делала'}} это только для того, чтобы достучаться до тебя. И у меня получилось.
 
-h: Let's just call this round a tie, okay?
+h: Давай просто закончим этот раунд вничью. Ладно?
 
 ```
 bb({ mouth:"sorry", eyes:"sorry" });
@@ -805,11 +807,11 @@ bb({ MOUTH_LOCK:true });
 
 b: ...
 
-b: Okay.
+b: Хорошо.
 
-h: Okay.
+h: Хорошо.
 
-n: *TIE*
+n: *НИЧЬЯ*
 
 `_.a3_ending = "walkaway";`
 
@@ -885,26 +887,26 @@ publish("act3",["roofhunter",27]);
 
 `Game.FORCE_CANT_SKIP = false;`
 
-r: Oh *come on*. After all that animal's done to you, you're just *giving up?*
+r: *Что!?* После всего того, что животное сделало с тобой, ты просто *сдашься?*
 
-r: What's the matter, kid? Are you *scared?*
+r: {{PM ? 'Чувак, в' : 'В'}} в чём дело{{PM ? '' : ', няш'}}!? Ты *боишься*?!
 
 ```
 publish('hong-next');
 publish("act3",["roofhunter",26]);
 ```
 
-h2: Yes.
+h2: Да.
 
-h2: I'm scared.
-
-`publish('hong-next')`
-
-h2: And that's okay!
+h2: Я боюсь.
 
 `publish('hong-next')`
 
-h2: It's okay to be scared.
+h2: В этой ситуации я {{PM ? '*должен*' : '*должна*'}} бояться.
+
+`publish('hong-next')`
+
+h2: Это нормально.
 
 `publish('hong-next')`
 
@@ -962,6 +964,11 @@ sfx("concrete_step2");
 
 ```
 publish('hong-next');
+```
+
+(...501)
+
+```
 Game.FORCE_CANT_SKIP = false;
 sfx("lock_door");
 publish("act3",["roofhunter",32]);
@@ -973,7 +980,7 @@ publish("act3",["roofhunter",32]);
 publish("act3",["roofhunter",33]);
 ```
 
-r: Did they just lock the door?
+r: {{PM ? 'Он закрыл' : 'Она закрыла'}} дверь?!
 
 ```
 Game.clearAll();
@@ -1063,7 +1070,7 @@ publish('hong-next');
 
 `publish('hong-next')`
 
-b: no...
+b: нет
 
 (...501)
 
@@ -1082,7 +1089,7 @@ publish('hong-next');
 
 `publish('hong-next')`
 
-b: no no no
+b: нет нет нет
 
 (...501)
 
@@ -1150,7 +1157,7 @@ Game.FORCE_TEXT_Y = 325;
 Game.OVERRIDE_FONT_SIZE = 50;
 ```
 
-b: NO!
+b: НЕТ!
 
 (...400)
 

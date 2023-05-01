@@ -48,11 +48,11 @@ function Character(spriteConfig, animLoops){
 	// Fear caption sprites
 	self.fearCaptionSprite = new Sprite({
 		image: Library.images.fear_captions,
-		grid: { width:1, height:3 },
+		grid: { width:1, height:4 },
 		frame: { width:200, height:200 },
 		anchor: { x:100/2, y:100/2 },
 		scale: 0.75,
-		frameNames:["harm","alone","bad"]
+		frameNames:["harm","alone","bad_male","bad_female"]
 	});
 
 	// Go To Frames
@@ -234,7 +234,9 @@ function Character(spriteConfig, animLoops){
 				icon.draw(ctx);
 
 				var caption = self.fearCaptionSprite;
-				caption.gotoFrameByName(attackedIconShown);
+				caption.gotoFrameByName(
+				    attackedIconShown == 'bad' ? (PM ? 'bad_male' : 'bad_female') : attackedIconShown
+				);
 				caption.x = icon.x;
 				caption.y = icon.y-37;
 				caption.alpha = icon.alpha;
